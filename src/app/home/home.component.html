@@ -1,0 +1,191 @@
+<!-- <div class="col-md-6 col-md-offset-3">
+  <h1>Hi {{currentUser.firstName}}!</h1>
+  <p>You're logged in with the MEAN Stack & Angular 6!!</p>
+  <h3>All registered users:</h3>
+  <ul>
+      <li *ngFor="let user of users">
+          {{user.username}} ({{user.firstName}} {{user.lastName}})
+          - <a (click)="deleteUser(user._id)">Delete</a>
+      </li>
+  </ul>
+  <p><a [routerLink]="['/login']">Logout</a></p>
+</div> -->
+
+
+
+<div class="container">
+      
+  <h1>Cure Clinic Inc</h1>
+  <p><a [routerLink]="['/login']">Logout</a></p>
+  <ngb-tabset [destroyOnHide]="false">
+    
+    <ngb-tab title="Basic Setting">
+      <ng-template ngbTabContent>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+        cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+        proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+        <br>
+
+        <p>ALL AVAILABLE DOCTORS : </p>
+
+        <ul>
+          <li *ngFor="let user of users">
+             <p> {{user.username}} ({{user.firstName}} {{user.lastName}})</p>
+              <!-- - <a (click)="deleteUser(user._id)">Delete</a> -->
+          </li>
+      </ul>
+
+
+      </ng-template>
+    </ngb-tab>
+     
+    <ngb-tab>
+      <ng-template ngbTabTitle>Our Services</ng-template>
+      <ng-template ngbTabContent>
+      
+          
+          <div class="w3-row-padding">
+          
+          <div class="w3-third">
+            <div class="w3-card">
+            <div class="w3-container w3-red">
+              <h1><b>DENTAL</b></h1>
+            </div>
+            <div class="w3-container w3-xlarge">
+              <p>The Newest<br>
+              <i><b>triple-action</b></i><br>
+              <span class="w3-xxlarge w3-text-red"><b>HOO</b></span></p>
+              <p><del>$400</del> <span class="w3-tag w3-yellow">New!</span><br>
+              Now only $299 !!!</p>
+            </div>
+            <div class="w3-container w3-red">
+              <p class="w3-opacity">Contact: 555 555 555</p>
+            </div>
+            </div>
+            <br>
+            <div class="w3-card">
+            <div class="w3-container w3-green">
+              <h1><b>VISION</b></h1>
+            </div>
+            <div class="w3-container w3-xlarge">
+              <p>The Newest<br>
+              <i><b>triple-action</b></i><br>
+              <span class="w3-xxlarge w3-text-red"><b>HOO</b></span></p>
+              <p><del>$400</del> <span class="w3-badge w3-red">6</span><br>
+              Now only $299 !!!</p>
+            </div>
+            <div class="w3-container w3-green">
+              <p class="w3-opacity">Contact: 555 555 555</p>
+            </div>
+            </div>
+          </div>
+          
+          <div class="w3-third">
+            <div class="w3-card w3-animate-fading">
+            <div class="w3-container w3-blue">
+              <h1><b>
+                Heart and Vascular</b></h1>
+            </div>
+            <div class="w3-container w3-xlarge">
+              <p>The Newest<br>
+              <i><b>triple-action</b></i><br>
+              <span class="w3-xxlarge w3-text-red"><b>HOO</b></span></p>
+              <p><del>$400</del><br>
+              Now only $299 !!!</p>
+            </div>
+            <div class="w3-container w3-blue">
+              <p class="w3-opacity">Contact: 555 555 555</p>
+            </div>
+            </div>
+            <br>
+            <div class="w3-card w3-animate-zoom">
+            <div class="w3-container w3-yellow">
+              <h1><b>Orthopedics</b></h1>
+            </div>
+            <div class="w3-container w3-xlarge w3-yellow">
+              <p>The Newest<br>
+              <i><b>triple-action</b></i><br>
+              <span class="w3-xxlarge w3-text-red"><b>HOO</b></span></p>
+              <p>Before <del>$400</del><br>
+              Now only $299 !!!</p>
+            </div>
+            <div class="w3-container w3-yellow">
+              <p class="w3-opacity">Contact: 555 555 555</p>
+            </div>
+            </div>
+          </div>
+          
+          <div class="w3-third">
+            <div class="w3-card">
+            <div class="w3-container w3-red">
+              <h1><b>Physical Therapy</b></h1>
+            </div>
+            <div class="w3-container w3-xlarge w3-yellow">
+              <p>The Newest<br>
+              <i><b>triple-action</b></i><br>
+              <span class="w3-xxlarge w3-text-red"><b>HOO</b></span></p>
+              <p>Before <del>$400</del><br>
+              Now only $299 !!!</p>
+            </div>
+            <div class="w3-container w3-red">
+              <p class="w3-opacity">Contact: 555 555 555</p>
+            </div>
+            </div>
+            <br>
+            <div class="w3-card">
+            <div class="w3-container">
+              <h1><b>Gynaecology</b></h1>
+            </div>
+            <div class="w3-container w3-xlarge w3-red">
+              <p>The Newest<br>
+              <i><b>triple-action</b></i><br>
+              <span class="w3-xxlarge"><b>HOO</b></span></p>
+              <p>Before <del>$400</del><br>
+              Now only $299 !!!</p>
+            </div>
+            <div class="w3-container">
+              <p class="w3-opacity">Contact: 555 555 555</p>
+            </div>
+            </div>
+          </div>
+          
+          </div>
+      </ng-template>
+    </ngb-tab>
+     
+    <ngb-tab>
+      <ng-template ngbTabTitle>X ray</ng-template>
+      <ng-template ngbTabContent>
+         <img src="../../assets/Screen Shot 2022-05-12 at 10.58.48 AM.png" alt="" srcset="">
+      </ng-template>
+    </ngb-tab>
+
+
+    <ngb-tab>
+      <ng-template ngbTabTitle>Payment</ng-template>
+      <ng-template ngbTabContent>
+          <p>This is payment page</p>
+      </ng-template>
+    </ngb-tab>
+     
+
+    <ngb-tab>
+      <ng-template ngbTabTitle>Cart</ng-template>
+      <ng-template ngbTabContent>
+          <p>This is cart page</p>
+      </ng-template>
+    </ngb-tab>
+     
+     
+    <ngb-tab title="Disabled" [disabled]="true">
+      <ng-template ngbTabContent>
+        <p>This is Disabled</p>
+      </ng-template>
+    </ngb-tab>
+     
+  </ngb-tabset>
+  </div>
