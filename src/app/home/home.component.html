@@ -18,6 +18,59 @@
   <h1>Cure Clinic Inc</h1>
   <p><a [routerLink]="['/login']">Logout</a></p>
   <ngb-tabset [destroyOnHide]="false">
+    <ngb-tab title="Home">
+      <ng-template ngbTabContent>
+        <div class="w3-light-grey w3-padding-64 w3-margin-bottom w3-center">
+          <h1 class="w3-jumbo">Hello {{currentUser.firstName}}</h1>
+          <h3>Welcome to your space in Cure Clinic's prtal</h3>
+        </div>
+        
+        <div class="w3-row-padding w3-content" style="max-width:1400px">
+          <div class="w3-twothird">
+            <img src="../../assets/home_image.jpg" alt="Notebook" style="width:100%">
+            <h2>Rolling MRIs into hospital rooms</h2>
+            <div class="w3-justify">
+             <p>Assessing a stroke demands a rapid, life-or-death assessment: Is the culprit a clot, which requires a blood thinner, or bleeding in the brain, which requires surgery? Now, a portable MRI device can help make that assessment right at a patient’s bedside — and in much less time than required by a trip to a standard machine.
+
+              The Swoop MRI — which was created with input from Yale Medicine in New Haven, Connecticut — received Food and Drug Administration (FDA) approval in August 2020 and is already at work in several U.S. hospitals.
+              
+              The new portable machine offers many advantages over its massive cousin, says Yale neurologist Kevin Sheth, MD.
+              
+              “The very strong magnets in regular MRIs bring a lot of challenges,” he explains. “You need intensive power and cooling, precautions like a shielded room, and a lot of training. If you use a weaker magnet, all those problems go away.”
+              
+              The weaker magnet is effective, according to an August 2021 study, which asked clinicians to identify various cerebral pathologies using Swoop images. “The goal is not to be as good as a high-magnet MRI, but to be good enough for clinical decisions,” says Sheth, who co-authored the study but has no financial interest in Hyperfine, the Connecticut-based company that produces the machine.
+              
+              Swoop’s size — it’s smaller than some refrigerators — eliminates the need to move frail patients down hospital hallways. What’s more, its cost — around $100,000 compared to $1 million for the bigger machine — puts it within reach of hospitals and regions with fewer resources. “This could essentially democratize brain imaging,” argues Sheth. A promising new approach has succeeded at both goals — and did so among men with an advanced form of the disease whose condition had deteriorated despite receiving standard treatments.
+
+              In fact, it more than doubled how long patients lived without their cancer worsening, according to a paper published in September. The study, which followed 831 men in 10 countries for a median of 20 months, compared patients who continued to receive standard care with ones who got the new treatment.
+              A promising new approach has succeeded at both goals — and did so among men with an advanced form of the disease whose condition had deteriorated despite receiving standard treatments.
+
+              In fact, it more than doubled how long patients lived without their cancer worsening, according to a paper published in September. The study, which followed 831 men in 10 countries for a median of 20 months, compared patients who continued to receive standard care with ones who got the new treatment.</p>
+            </div>
+          </div>
+          <div class="w3-third">
+            <div class="w3-container w3-light-grey">
+              <h2>Solving sickle cell disease</h2>
+              <p class="w3-justify">In research conducted at Boston Children’s Hospital, scientists used a virus to switch off the gene that triggers cells’ sickling, according to a January 2021 study. The patients subsequently produced healthy red blood cells — and nearly all were able to discontinue the blood transfusions SCD often requires.
+
+                “One participant used to have transfusions every month but has not needed any in three years,” says David Williams, MD, chief of the Division of Hematology/Oncology at Boston Children’s and head of the research team. “This has completely changed his life.”
+                
+                The study followed six patients for a median of 18 months and found that the treatment completely halted the disease’s more severe symptoms.
+                
+                “I’m so happy for my sickle-cell patients. This is a terrible disease,” notes Williams.</p>
+            </div>
+            <br>
+            <div class="w3-container w3-light-grey w3-justify">
+              <h2>Saving mothers’ lives</h2>
+              <p class="w3-justify">When a woman’s uterus fails to contract after childbirth, tremendous blood loss can ensue, possibly leading to an emergency hysterectomy or even death. In fact, postpartum hemorrhage affects 3% to 10% of all childbirths in the United States and causes more than one-third of childbirth-related maternal deaths worldwide.
+
+                Treatment options include medications that don’t always work and inserting a balloon to put pressure on the uterus — much like exerting pressure on a cut — that comes with risks and must remain in place for a day.</p>
+            </div>
+            
+          </div>
+        </div>
+      </ng-template>
+    </ngb-tab>
     
     <ngb-tab title="Time Card">
       <ng-template ngbTabContent>
