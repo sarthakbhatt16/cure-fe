@@ -1,3 +1,6 @@
 export const environment = {
-  production: true
+  production: false,
+  appConfig: {
+    apiUrl: 'https://curebe.herokuapp.com'
+  }
 };
